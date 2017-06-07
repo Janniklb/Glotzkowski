@@ -11,6 +11,8 @@ $sum = 0;
 $sumnumsort = 0;
 $count=0;
 $safearray=0;
+$group="group";
+
 
 $vmax=$_SESSION["nummax"]; //Session üernimmt die Anzahl der Tabellenzeilen(Prime)
 $varM=$_SESSION["varnum"]; //Session übernimmt die Anzahl der Eingangsvariablen
@@ -29,6 +31,7 @@ foreach($input as $i){ //Jedes Prim wird als $i in die Schleife gegeben
 
 asort($sumnum);
 echo_r($sumnum);
+
 for($i=0;$i<$vmax;$i++){
 	foreach($sumnum as $a=>$e){
 		if($i==$e){
@@ -40,6 +43,9 @@ for($i=0;$i<$vmax;$i++){
 			for($u=0;$u<$nills;$u++){
 				array_push($safearray, 0);
 			}
+			$sum=array_sum($bin); //Alle 0en und 1en des Arrays werden addiert 
+			$sumnum[$i]=$sum; 
+			$safearray["groups"]=$sum;
 			$safearray=array_reverse($safearray);
 			$groups[$a]=$safearray;
 		}
@@ -52,4 +58,5 @@ function echo_r($x)
 {
 	echo '<pre stlye="color:red">DEBUG:'.print_r($x, true).'</pre>';
 }
+echo $safearray[0][1];
 ?>
