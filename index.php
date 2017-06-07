@@ -1,7 +1,18 @@
 <html>
-<head><meta charset="UTF-8"><title>Glotzkowski</title>
+<head>
+<meta charset="utf-8"/>
+</head>
+
+
 <body>
-<h1>Beispielüberschrift</h1>
-<p>Dies ist ein Testparagraph. Er dient dazu zu überprüfen ob die Datei Index.php erreichbar ist, denn wenn sie es ist, dann sieht man diesen text</p>
+
+<Form action="quine.php"method="post">
+
+<h3>Anzahl der Eigangsvariablen</h3>
+<input type="number" name="vars" size="50"><br>
+<br>
+<button type="submit">Absenden</button>
+<br><br>
+
 </body>
 </html>
