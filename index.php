@@ -6,10 +6,10 @@
 
 <body>
 
-<Form action="quine.php"method="post">
+<Form action="form.php"method="post">
 
 <h3>Anzahl der Eigangsvariablen</h3>
-<input type="number" name="vars" size="50"><br>
+<input type="number" name="anzahl" size="50"><br>
 <br>
 <button type="submit">Absenden</button>
 <br><br>
