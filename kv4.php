@@ -16,22 +16,24 @@ $variablen_mode = "_POST";
 
 //--------------------------------------------------------------- Variablen
 
-$anzahl_variablen = $_SESSION["varnum"];
+$anzahl_variablen = $$variablen_anzahl_mode[ $variablen_anzahl_name ];
+$anzahl_zeihlen = pow( 2, $anzahl_variablen );
 
+#echo $anzahl_variablen.":".$anzahl_zeihlen;
 
 //-------------------------------------------------------------- Erstes Array ( NUMMER => GRUPPE )
 
 $erstes_array = array();
 
 foreach( $$variablen_mode as $nummer => $wert ){
-	//if( $wert == $mode ){
-		$nummer_binaer = decbin( $wert );
+	if( $wert == $mode ){
+		$nummer_binaer = decbin( $nummer );
 		$nummer_binaer_array = str_split( $nummer_binaer );
 		$gruppe = array_sum( $nummer_binaer_array );
 		
 		$erstes_array[ $nummer ] = $gruppe;
 	}
-//}
+}
 
 asort( $erstes_array );
 
