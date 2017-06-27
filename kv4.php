@@ -1,4 +1,14 @@
 <?php 
+$ist_1 = false;
+foreach( $_POST as $wert )
+{
+	if( $wert == 1 )
+	{
+		$ist_1 = true;
+	}
+}
+if( $ist_1 )
+{
 //------------------------------------------------------------------- Einstellung
 # Minimierungsverfahren ( 1 oder 0 )
 $mode = 1;
@@ -197,4 +207,12 @@ foreach( $mini_array as $key => $wert ){
 	}
 }
 echo $formel;
+
+
+}
+else
+{
+	echo "Sorry du Model! Konnte nicht minimiert werden.";
+}
+
 ?>
