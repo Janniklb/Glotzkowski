@@ -1,0 +1,43 @@
+h3 {  
+	color: black;
+	font-size: 50px;
+	text-align: auto;
+	font-family: Brush Script MT;
+}
+body {
+	overflow: scroll;
+   	background-color: #FF3466
+
+}
+div  {
+	margin: 150px;
+    font: Calibri;
+    border: 5px solid black;
+    padding: 15px;
+	text-align: center;
+	margin-top: 30px;
+	border-radius: 30px;
+	
+}
+.button {
+    background-color: #5F9EA0;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	font-family: "Arial Narrow";
+	border-radius: 50px;
+	border: 1px solid black;
+}
+
+input.text {
+    width: 70px;
+    height: 50px;
+    border: 1px solid black;
+	border-radius: 20px;
+	font-size: 20px;
+	text-align: center;
+	font-family: "Arial Narrow";
+}

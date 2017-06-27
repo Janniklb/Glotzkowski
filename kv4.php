@@ -1,4 +1,8 @@
-<?php 
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<div>
+<?php
 $ist_1 = false;
 $ist_0 = false;
 foreach( $_POST as $wert )
@@ -8,7 +12,6 @@ foreach( $_POST as $wert )
 		$ist_1 = true;
 	}
 }
-
 foreach( $_POST as $wert )
 {
 	if( $wert == 0 )
@@ -108,7 +111,6 @@ do{
 //Im obigen Code hat bereits eine minimierung stattgefunden. Zusammen minimierte Zahlen wurden in einem Array gespeichert
 //Bsp. für ein Teil:	Ganzes: S1S3S4 v !S6S3S9 ein Teil wäre dann S1S3S4
 //Jedes Teil hat ein eigenes unterarray im $mini_array, in dem die optimierten Zahlen dieses arrays gespeichert sind Bsp: 0,3,6,7 => Die Kombination der Eingänge in der Wahrheitstabelle in der Zeile 0,3,6 und 7 ergeben 1
-
 //Variablen deklarieren
 $einshoch = 0;
 $count = 0;
@@ -119,7 +121,6 @@ $minzahl = 0;
 $vergleichsbasis = 0;
 $explodespeicher = 0;
 $countspeicher = 0;
-
 //Arrays deklarieren
 $deczahlenx = array();
 $deczahlen = array();
@@ -127,8 +128,6 @@ $vergleichswerte = array();
 	
 //Zählt wie viele Teile die Funktionen in der Endformel haben würde (Vor der kommenden optimierung)
 $count = count($mini_array);
-
-
 //Diese Schleife zählt wie viele Zahlen pro Teil optimiert wurden. Die Info wird mit einer Identifikationsnummer für das Teil an den Mini_array angehängt
 for($i=0; $i<$count; $i++){
 	$zuzaehlen = explode(":", $mini_array[$i]["deczahl"]); 
@@ -138,8 +137,6 @@ for($i=0; $i<$count; $i++){
 	array_push($deczahlen, $deczahlenx); 
 	$deczahlenx=array(); 
 }
-
-
 //Hier wird eine Schleife geöffnet, die die ganze optimierung umfasst und läuft bis alle Teile mit den anderen verglichen wurden
 //Teile, deren optimierte Zahlen auch in anderen vorkommen, werden aussortiert
 for($e=0; $e<$count+1; $e++){
@@ -161,7 +158,6 @@ for($e=0; $e<$count+1; $e++){
 		}
 	}
 	
-
 //Mit der Information in welchem Teil die wenigsten Zahlen optimiert wurden, werden eben diese Zahlen herausgefunden und in einem extra array gespeichert
 	$arrminzahl = $deczahlen[$minzahl][0];
 	$vergleichsbasis = explode(":", $mini_array[$arrminzahl]["deczahl"]);
@@ -180,7 +176,6 @@ for($e=0; $e<$count+1; $e++){
 	$countspeicher = 0;
 	$explodespeicher = 0;
 	}
-
 //Nachfolgend werden die beiden Arrays verglichen. Wenn alle Zahlen des einzelnen Teils irgendwo in den anderen Teilen vorkommen, wird das einzelne Teil nicht mehr benötigt
 //Ist nur eine Zahl des einzelen Teils einzigartig, dann wird das Teil für die Endformel übernommen
 	
@@ -193,7 +188,6 @@ for($e=0; $e<$count+1; $e++){
 		$einshoch++;
 	}
 }
-
 $formel = "";
 foreach( $mini_array as $key => $wert ){
 	if( $mini_array[ $key ][ "benutzt" ] == 2 ){
@@ -215,9 +209,6 @@ foreach( $mini_array as $key => $wert ){
 		}
 	}
 }
-echo "Y = ". $formel;
-
-
 }
 else
 {
@@ -230,4 +221,17 @@ else
 	}
 }
 
+if($ist_1 && $ist_0){
+echo "Y = ".$formel;
+}
+
 ?>
+<br><br>
+<Form action="index.php"method="post">
+
+<input type="submit" class="button" value="Zurück"></div>
+
+</head>
+
+
+</html>

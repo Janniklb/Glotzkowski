@@ -1,18 +1,32 @@
 <html>
+<meta charset="utf-8"/>
 <head>
 
-<meta charset="utf-8"/>
+<link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
 <Form action="form.php"method="post">
 
-<h3>Anzahl der Eigangsvariablen</h3>
+<div id="start">
+<h3>Anzahl der Eingangsvariablen</h3>
 
-<input type="number" name="anzahl" size="50"><br><br>
+<img class="img-circle" src="http://free-web-tools.com/wp-content/uploads/2015/08/free-triangle-logo.png" width= "30%" height= "38%">
 
-<button type="submit">Absenden</button><br><br>
+<br>
+<br>
+
+<input type="number" class="text" name="anzahl" size="50"><br>
+<br>
+
+<input type="submit" class="button" value="Absenden">
+
+
+</div>
+<br><br>
+
 
 </body>
 </html>

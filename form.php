@@ -1,27 +1,23 @@
 <html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
 <form method="post" action="kv4.php?anzahl=<?php echo $_POST['anzahl']; ?>">
-<table>
+<div>
+<center><table></center>
 
 <?php
-
 $zeihlen = pow( 2, $_POST['anzahl']);
 $zegativ = $_POST['anzahl'];
-
 //---------------------------------------------- Überschrift------------------
-
 echo "<tr><th>Nummer</th>";
-
 $i = 0;
 while( $i < $_POST['anzahl']){
 	$a = $zegativ - $i;
 	echo "<th>S".$a."</th>";
 	$i++;
 }
-
 echo "<th>0</th><th>1</th></tr>";
-
-
-
 $i=0;
 while($i < $zeihlen){
 	$v = "%0".$_POST['anzahl']."d";
@@ -31,14 +27,15 @@ while($i < $zeihlen){
 			echo "<td>".$bin[$y]."</td>";
 		}
 	echo '<td><input type="radio" name="'.$i.'" value="0" checked/></td><td><input type="radio" name="'.$i.'" value="1" /></td>';
-
 	$i++;
 }
 ?>
 
-</table>
+<center></table></center>
+<br>
 
-<input type="submit" value="Absenden" />
+<input type="submit" class="button" value="Absenden" />
 
 </form>
+</div>
 </html>
