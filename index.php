@@ -7,12 +7,17 @@
 </head>
 
 <body>
-
-<Form action="Anleitung.pdf"method="post">
-
 <div id="start">
-
+<form action="Anleitung.pdf" method="post">
 <input type="submit" class="helpbutton" value="Hilfe">
+</form>
+
+
+
+
+
+
+<Form action="form.php"method="post">
 
 <h1>Glotzkowski</h1>
 
@@ -22,9 +27,6 @@
 
 <input type="number" class="text" name="anzahl" size="50"><br>
 <br>
-
-</form>
-<form action="form.php" method="post">
 <input type="submit" class="button" value="Absenden">
 </form>
 
