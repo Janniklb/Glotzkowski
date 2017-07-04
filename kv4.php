@@ -189,15 +189,9 @@ for($e=0; $e<$count+1; $e++){
 	}
 }
 $formel = "";
-$i = 0;
 foreach( $mini_array as $key => $wert ){
 	if( $mini_array[ $key ][ "benutzt" ] == 2 ){
-		if($i == 1 ){
-			$formel = $formel." v ";
-		}		
-		
-		$i = 1;
-		
+	
 		$intern_array_deczahl = $mini_array[ $key ][ "deczahl" ];
 		$intern_array = binaer( $intern_array_deczahl, $anzahl_variablen );
 		
@@ -210,10 +204,11 @@ foreach( $mini_array as $key => $wert ){
 				$formel = $formel."!S".$key2;
 			}
 		}
+		if( $key < (count( $mini_array )-1) ){
+			$formel = $formel." v ";
+		}
 	}
 }
-
-
 }
 else
 {
@@ -225,11 +220,9 @@ else
 		echo "Y = 0";
 	}
 }
-
 if($ist_1 && $ist_0){
 echo "Y = ".$formel;
 }
-
 ?>
 <br><br>
 <Form action="index.php"method="post">

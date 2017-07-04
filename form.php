@@ -13,7 +13,7 @@ $zegativ = $_POST['anzahl'];
 echo "<tr><th>Nummer</th>";
 $i = 0;
 while( $i < $_POST['anzahl']){
-	$a = $zegativ - $i-1;
+	$a = $zegativ - $i;
 	echo "<th>S".$a."</th>";
 	$i++;
 }

@@ -1,35 +1,43 @@
-h3 {  
-	color: black;
-	font-size: 50px;
+h1 {
+	color: 	#A2CD5A;
+	font-size: 270%;
 	text-align: auto;
-	font-family: Brush Script MT;
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+h3 {  
+	color: 	#A2CD5A;
+	font-size: 200%;
+	text-align: auto;
+	font-family: Calibri;
 }
 body {
 	overflow: scroll;
-   	background-color: #FF3466
-
+   	background:url(http://cdn.wallpapersafari.com/73/21/WqjNUJ.jpg) top right no-repeat; background-attachment:fixed;
 }
 div  {
 	margin: 150px;
     font: Calibri;
-    border: 5px solid black;
+    border: 5px solid;
+	border-color: #A2CD5A;
     padding: 15px;
+	color: 	#3a5fcd;
 	text-align: center;
 	margin-top: 30px;
 	border-radius: 30px;
 	
 }
 .button {
-    background-color: #5F9EA0;
+  background-color: #A2CD5A;
     color: black;
     padding: 15px 32px;
     text-align: center;
-    font-size: 16px;
+    font-size: 100%;
     margin: 4px 2px;
     cursor: pointer;
-	font-family: "Arial Narrow";
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 	border-radius: 50px;
-	border: 1px solid black;
+	border: 3px solid;
+	border-color: #EEB422;
 }
 
 input.text {
@@ -40,4 +48,18 @@ input.text {
 	font-size: 20px;
 	text-align: center;
 	font-family: "Arial Narrow";
+}
+.helpbutton {
+    background-color: #A2CD5A;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    margin: 4px 2px;
+    cursor: pointer;
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+	border-radius: 50px;
+	border: 3px solid;
+	border-color: #EEB422;
+	position:absolute; right:30px ; top:10px ;
 }

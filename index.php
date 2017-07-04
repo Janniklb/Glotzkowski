@@ -8,21 +8,25 @@
 
 <body>
 
-<Form action="form.php"method="post">
+<Form action="Anleitung.pdf"method="post">
 
 <div id="start">
+
+<input type="submit" class="helpbutton" value="Hilfe">
+
+<h1>Glotzkowski</h1>
+
+<img class="img-circle" src="http://www.eatlogos.com/alphabet_logos/png/vector_s_letter_logo.png" width= "36%" height= "33%">
+
 <h3>Anzahl der Eingangsvariablen</h3>
-
-<img class="img-circle" src="http://free-web-tools.com/wp-content/uploads/2015/08/free-triangle-logo.png" width= "30%" height= "38%">
-
-<br>
-<br>
 
 <input type="number" class="text" name="anzahl" size="50"><br>
 <br>
 
+</form>
+<form action="form.php" method="post">
 <input type="submit" class="button" value="Absenden">
-
+</form>
 
 </div>
 <br><br>
