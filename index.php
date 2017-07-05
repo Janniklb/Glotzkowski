@@ -21,7 +21,7 @@
 
 <h1>Glotzkowski</h1>
 
-<img class="img-circle" src="http://www.eatlogos.com/alphabet_logos/png/vector_s_letter_logo.png" width= "36%" height= "33%">
+<img class="img-circle" src="http://www.eatlogos.com/alphabet_logos/png/vector_s_letter_logo.png" width= "36%" height= "40%">
 
 <h3>Anzahl der Eingangsvariablen</h3>
 
