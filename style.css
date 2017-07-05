@@ -12,7 +12,7 @@ h3 {
 }
 body {
 	overflow: scroll;
-   	background:url(http://cdn.wallpapersafari.com/73/21/WqjNUJ.jpg) top right no-repeat; background-attachment:fixed;
+   	background-image: url("background.jpg"); top right no-repeat; background-attachment:fixed;
 }
 div  {
 	margin: 150px;
