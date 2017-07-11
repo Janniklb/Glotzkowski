@@ -5,7 +5,9 @@
 <form method="post" action="kv4.php?anzahl=<?php echo $_POST['anzahl']; ?>">
 <div>
 <center><table></center>
-
+<form action="Anleitung.pdf" method="post">
+<input type="submit" class="helpbutton" value="Hilfe">
+</form>
 <?php
 $zeihlen = pow( 2, $_POST['anzahl']);
 $zegativ = $_POST['anzahl'];

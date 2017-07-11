@@ -1,3 +1,6 @@
+<form action="Anleitung.pdf" method="post">
+<input type="submit" class="helpbutton" value="Hilfe">
+</form>
 <?php
 function binaer( $zahlen_string, $anzahl_variablen ){
         $zahlen = explode( ":", $zahlen_string );
